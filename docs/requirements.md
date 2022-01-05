@@ -1,7 +1,7 @@
-## Modern Data Stack
+# Modern Data Stack
 
 
-- General Product Requirements
+### General Product Requirements
     1. Build a Data Platform which ingests various data sources, applies transformation, creates dataset and allows Machine Learning Engineers to build Models over the datasets.
     2. Use only tools to build the platform, no reinventing of wheel.
     3. Support Multi-Cloud from Start as customer may want to move thier data to region where regulations are supported.
@@ -10,10 +10,12 @@
     6. TO be added
 
 
-- Components Requirements
+### Top Components Requirements:
 
-    - ETL
-        1. Use DBt + Fivetran + Airflow for ETL
-        2. Use Postgresql for Metadata Storage
-        3. Snowflake or Redshift or any warehouse tech to store original data, transformed data, final datasets
+
+    1. Use DBt + Airflow Sensors + Operators + Airflow Scheduling
+    2. Use Postgresql for Metadata Storage
+    3. AWS S3  Free Tier to be used as lake data to store original data and  transformed data, final datasets in Snowflake.
+    4. Any BI Tool can loadup the dataset for visualisation
+    5. 
     
